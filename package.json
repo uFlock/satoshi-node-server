@@ -1,0 +1,22 @@
+{
+  "name": "satoshi-node-server",
+  "version": "1.0.0",
+  "description": "Technical Task for Satoshi Ltd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node service.js",
+    "start": "node service.js LIVE"
+  },
+  "keywords": [],
+  "author": "Vladimir Muzichuk",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.10.1",
+    "fastify-compress": "^3.4.1",
+    "fastify-cookie": "^5.1.0",
+    "fastify-cors": "^5.1.0",
+    "fastify-formbody": "^5.0.0",
+    "mongoose": "^5.11.13"
+  }
+}
