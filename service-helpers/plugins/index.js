@@ -13,6 +13,15 @@ const swaggerConfig = environment.getSwagger();
 const mongooseConfig = environment.getMongoose();
 const corsPolicy = environment.getCorsPolicy();
 
+module.exports = {
+	setFormBody,
+	setCookie,
+	setCors,
+	setCompress,
+	setSwagger,
+	setMongoose
+};
+
 function setFormBody(fastify) {
 	fastify.register(formBody);
 }
@@ -50,11 +59,3 @@ function setMongoose(fastify) {
 	fastify.register(mongoosePlugin, mongooseConfig);
 }
 
-module.exports = {
-	setFormBody,
-	setCookie,
-	setCors,
-	setCompress,
-	setSwagger,
-	setMongoose
-};
