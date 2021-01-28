@@ -58,4 +58,3 @@ function setSwagger(fastify) {
 function setMongoose(fastify) {
 	fastify.register(mongoosePlugin, mongooseConfig);
 }
-
