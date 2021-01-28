@@ -3,10 +3,9 @@ POST http://{{host}}:{{port}}/api/user/register
 Content-Type: application/json
 
 {
-
 	"username": "test",
 	"age": 101,
-	"score": 15,
+	"score": 1000,
 	"password": "password1"
 }
 
@@ -16,5 +15,9 @@ Content-Type: application/json
 
 {
 	"username": "test",
-	"password": "password1"
+	"password": "testtest"
 }
+
+#### get user details
+GET http://{{host}}:{{port}}/api/user/details
+sessionToken: 6c800406-d434-4551-858b-02b1b4c83213

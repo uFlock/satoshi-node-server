@@ -1,11 +1,13 @@
 "use strict";
 
-if (process.argv[2] !== undefined) {
-	global.env = process.argv[2].toUpperCase();
+global.env = process.argv[2] !== undefined ? process.argv[2].toUpperCase() : 'LOCAL';
+
+if (global.env === 'LOCAL') {
+	require('custom-env').env('local');
 }
 
-const service = require('./helpers/service');
-const plugins = require('./helpers/plugins');
+const service = require('./service-helpers/service');
+const plugins = require('./service-helpers/plugins');
 
 const routes = require('./routes');
 
@@ -15,6 +17,8 @@ plugins.setCompress(fastify);
 plugins.setFormBody(fastify);
 plugins.setCookie(fastify);
 plugins.setCors(fastify);
+plugins.setSwagger(fastify);
+plugins.setMongoose(fastify);
 
 routes.setRoutes(fastify);
 
