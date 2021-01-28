@@ -18,7 +18,7 @@ npm run dev
 ```
 
 ### Documentation and API tests
-Go to http://localhost:1337/Documentation
+Go to http://localhost:1337/documentation
 
 ### Build Container
 ```
