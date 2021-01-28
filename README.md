@@ -11,6 +11,13 @@ Warning: won't work without .env.local file
 npm run dev
 ```
 
+.env.local example:
+```dotenv
+MONGO_DB_URI=mongodb+srv://<REST_OF_YOU_CONNECTION_STRING>
+ALLOWED_CORS="<ARRAY/REGEX/STRING OF ALLOWED HOSTS>"
+SWAGGER_HOST="<YOUR HOST> //example localhost:1337"
+```
+
 ### Documentation and API tests
 Go to http://localhost:1337/documentation
 
