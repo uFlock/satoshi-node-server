@@ -51,7 +51,7 @@ const environment = {
 				}
 			},
 			corsPolicy: {
-				origin: process.env.ALLOWED_CORS,
+				origin: new RegExp(process.env.ALLOWED_CORS),
 				credentials: true,
 				methods: ['GET', 'POST', 'DELETE', 'PUT'],
 				allowedHeaders: [
@@ -106,7 +106,7 @@ const environment = {
 			}
 		},
 		corsPolicy: {
-			origin: process.env.ALLOWED_CORS,
+			origin: new RegExp(process.env.ALLOWED_CORS),
 			credentials: true,
 			methods: ['GET', 'POST', 'DELETE', 'PUT'],
 			allowedHeaders: [
@@ -117,7 +117,6 @@ const environment = {
 				'Cache-Control',
 				'x-mime-type',
 				'x-file-name',
-				'X-File-Size',
 				'sessionToken'
 			],
 		}
