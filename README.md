@@ -6,13 +6,13 @@ npm install
 ```
 
 ### Run with developement settings
-####Warning: won't work without .env.local file
+Warning: won't work without .env.local file
 ```
 npm run dev
 ```
 
 ### Run with developement settings
-####Warning: won't work without .env.local file
+Warning: won't work without .env.local file
 ```
 npm run dev
 ```
