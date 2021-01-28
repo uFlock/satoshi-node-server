@@ -6,6 +6,13 @@ const os = require('os');
 
 const swaggerModels = require('./swaggerModels');
 
+module.exports = {
+	getSatoshi: () => environment[env].satoshi,
+	getSwagger: () => environment[env].swagger,
+	getMongoose: () => environment[env].mongoose,
+	getCorsPolicy: () => environment[env].corsPolicy,
+};
+
 const environment = {
 	LIVE: {
 		satoshi: {
@@ -115,11 +122,4 @@ const environment = {
 			],
 		}
 	}
-};
-
-module.exports = {
-	getSatoshi: () => environment[env].satoshi,
-	getSwagger: () => environment[env].swagger,
-	getMongoose: () => environment[env].mongoose,
-	getCorsPolicy: () => environment[env].corsPolicy,
 };

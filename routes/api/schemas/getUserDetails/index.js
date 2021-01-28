@@ -35,6 +35,10 @@ const responseJsonSchema = {
 		properties: {
 			message: { type: 'string' },
 		}
+	},
+	401: {
+		type: 'string',
+		example: 'Unauthorised'
 	}
 };
 
