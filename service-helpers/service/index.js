@@ -1,6 +1,6 @@
 "use strict";
 
-const environment = require('../../components/satoshi-app-environment');
+const environment = require('../../components/satoshi-service-config');
 
 const satoshiConfig = environment.getSatoshi();
 

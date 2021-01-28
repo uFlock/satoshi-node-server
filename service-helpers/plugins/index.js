@@ -7,7 +7,7 @@ const compress = require('fastify-compress');
 const swagger = require('fastify-swagger');
 const mongoosePlugin = require('fastify-mongoose-driver').plugin;
 
-const environment = require('../../components/satoshi-app-environment');
+const environment = require('../../components/satoshi-service-config');
 
 const swaggerConfig = environment.getSwagger();
 const mongooseConfig = environment.getMongoose();
