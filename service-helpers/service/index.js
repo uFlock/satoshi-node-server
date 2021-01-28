@@ -6,6 +6,11 @@ const satoshiConfig = environment.getSatoshi();
 
 const defaultServiceConfig = {};
 
+module.exports = {
+	createService,
+	startService
+};
+
 function createService(config) {
 
 	const serviceConfig = config ? config : defaultServiceConfig;
@@ -19,8 +24,3 @@ function startService(fastify) {
 
 	console.log(`Server Starting on ${satoshiConfig.hostname}:${satoshiConfig.port}`);
 }
-
-module.exports = {
-	createService,
-	startService
-};
