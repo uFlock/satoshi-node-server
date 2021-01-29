@@ -27,7 +27,7 @@ docker build -t test-node .
 ```
 ### Run Container In docker
 ```
-docker run --name=test-node -d -p 1337:1337 test-node
+docker run --name=test-node -d -p 1337:80 test-node
 ```
 
 ### Deploy To Kubernetes
