@@ -17,7 +17,7 @@ const environment = {
 	LIVE: {
 		satoshi: {
 			hostname: os.hostname(),
-			port: 443
+			port: 80
 		},
 		swagger: {
 			routePrefix: '/documentation',
