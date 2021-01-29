@@ -17,7 +17,7 @@ const environment = {
 	LIVE: {
 		satoshi: {
 			hostname: os.hostname(),
-			port: 80
+			port: 443
 		},
 		swagger: {
 			routePrefix: '/documentation',
@@ -41,31 +41,31 @@ const environment = {
 				],
 				definitions: swaggerModels
 			},
-			mongoose: {
-				uri: process.env.MONGO_DB_URI,
-				settings: {
-					useNewUrlParser: true,
-					useUnifiedTopology: true,
-					useCreateIndex: true,
-					useFindAndModify: false
-				}
-			},
-			corsPolicy: {
-				origin: new RegExp(process.env.ALLOWED_CORS),
-				credentials: true,
-				methods: ['GET', 'POST', 'DELETE', 'PUT'],
-				allowedHeaders: [
-					'Content-Type',
-					'Authorization',
-					'Content-Length',
-					'X-Requested-With',
-					'Cache-Control',
-					'x-mime-type',
-					'x-file-name',
-					'X-File-Size',
-					'sessionToken'
-				],
+		},
+		mongoose: {
+			uri: process.env.MONGO_DB_URI,
+			settings: {
+				useNewUrlParser: true,
+				useUnifiedTopology: true,
+				useCreateIndex: true,
+				useFindAndModify: false
 			}
+		},
+		corsPolicy: {
+			origin: new RegExp(process.env.ALLOWED_CORS),
+			credentials: true,
+			methods: ['GET', 'POST', 'DELETE', 'PUT'],
+			allowedHeaders: [
+				'Content-Type',
+				'Authorization',
+				'Content-Length',
+				'X-Requested-With',
+				'Cache-Control',
+				'x-mime-type',
+				'x-file-name',
+				'X-File-Size',
+				'sessionToken'
+			],
 		}
 	},
 	LOCAL: {

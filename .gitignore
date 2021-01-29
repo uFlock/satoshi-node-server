@@ -3,6 +3,7 @@ node_modules
 scratchpad
 deployment
 http
+certificates
 
 /tests/e2e/videos/
 /tests/e2e/screenshots/
