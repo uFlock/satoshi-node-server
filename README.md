@@ -5,7 +5,7 @@
 npm install
 ```
 
-### Run with developement settings
+### Run with development settings
 Warning: won't work without .env.local file
 ```
 npm run dev
